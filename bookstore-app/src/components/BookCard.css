@@ -1,0 +1,52 @@
+/* src/components/BookCard.css */
+.book-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .book-title {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .book-description {
+    padding: 0 15px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 8px 16px; /* Reduced padding */
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    border-radius: 50px;
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  .learn-more:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

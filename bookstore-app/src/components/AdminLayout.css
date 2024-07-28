@@ -1,0 +1,89 @@
+/* src/components/AdminLayout.css */
+
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-button {
+    display: block;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #34495e;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-button:hover {
+    background-color: #3498db;
+  }
+  
+  .admin-main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ecf0f1;
+  }
+  
+  .admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: #ecf0f1;
+  }
+  
+  .home-button, .logout-button {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover, .logout-button:hover {
+    background-color: #2c3e50;
+  }
+  
+  .logout-button {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-content {
+      flex-direction: column;
+    }
+  
+    .admin-sidebar {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .sidebar-button {
+      padding: 0.5rem;
+    }
+  
+    .admin-main-content {
+      padding: 1rem;
+    }
+  }
